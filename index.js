@@ -7,5 +7,6 @@ import App from './App';
 import {name as appName} from './app.json';
 
 import HomeScreen from './src/Main';
+import StartScreen from './src/StartScreen';
 
-AppRegistry.registerComponent(appName, () => HomeScreen);
+AppRegistry.registerComponent(appName, () => StartScreen);

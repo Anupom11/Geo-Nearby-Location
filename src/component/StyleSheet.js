@@ -12,6 +12,32 @@ export default styles = StyleSheet.create({
         height: 50,
         width:300,  
     },
+    button2: {
+        alignItems:'center', 
+        justifyContent:'center', 
+        alignSelf:'center', 
+        borderWidth:2, 
+        borderColor:'#1369C1', 
+        backgroundColor:'#ffffff', 
+        padding:5, 
+        margin:2, 
+        borderRadius:5, 
+        width:200, 
+        height:100
+    },
+    button3: {
+        alignItems:'center', 
+        justifyContent:'center', 
+        alignSelf:'center', 
+        borderWidth:2, 
+        borderColor:'#1369C1', 
+        backgroundColor:'#ffffff', 
+        padding:5, 
+        margin:2, 
+        borderRadius:5, 
+        width:200, 
+        height:100
+    },
     seperatorLine: {
         margin: 10,
         borderBottomColor: 'black',
