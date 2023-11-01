@@ -150,10 +150,10 @@ export default HomeScreen=()=> {
                     
                     <View style={{margin:10}}/>
 
-                    <Text style={{fontSize:18, color:'black', fontWeight:'normal'}}>Distance: {distanceVal}</Text>
+                    <Text style={{fontSize:18, color:'black', fontWeight:'normal'}}>Arial Distance: {distanceVal}</Text>
                     
                     <View style={{position:'absolute', bottom:10, width:150, left:'center'}}>
-                        <Button color="#2196F3" title="Locate" onPress={()=> getGPSCoordinate()}    />
+                        <Button color="#2196F3" title="Locate Current" onPress={()=> getGPSCoordinate()}    />
                     </View>
                     
                 </View>

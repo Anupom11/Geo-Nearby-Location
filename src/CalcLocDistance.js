@@ -127,7 +127,7 @@ export default CalcLocDistanceScreen=()=> {
                 <View style={styles.seperatorLine}/>
 
                 <View style={styles.distanceDtlSection}>
-                    <Text style={{fontSize:18, color:'black', fontWeight:'normal'}}>Distance: {distanceVal}</Text>                    
+                    <Text style={{fontSize:18, color:'black', fontWeight:'normal'}}>Arial Distance: {distanceVal}</Text>                    
                 </View>
 
             </View>
