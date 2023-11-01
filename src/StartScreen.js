@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 
 import styles from '../src/component/StyleSheet';
 
-export default StartScreen=()=> {
+export default StartScreen=({navigation})=> {
 
     return (
         <>
@@ -15,7 +15,7 @@ export default StartScreen=()=> {
 
                 <View style={{margin:25}}/>
 
-                <TouchableOpacity style={styles.button3}>
+                <TouchableOpacity style={styles.button3} onPress={()=> navigation.navigate('Home')}>
                     <Text style={{fontWeight:"normal", color:'#1369C1', fontSize:18}}>Calculate Nearby</Text>
                 </TouchableOpacity>
 
