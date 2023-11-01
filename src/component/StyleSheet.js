@@ -42,6 +42,18 @@ export default styles = StyleSheet.create({
         margin: 10,
         borderBottomColor: 'black',
         borderBottomWidth: StyleSheet.hairlineWidth
+    },
+    distanceDtlSection: {
+        flex:1, 
+        height:200, 
+        alignItems:'center', 
+        justifyContent:'center', 
+        alignSelf:'stretch', 
+        borderWidth:1, 
+        borderColor:'grey', 
+        backgroundColor:'#f3edfa', 
+        margin:5, 
+        borderRadius:5
     }
 });
 

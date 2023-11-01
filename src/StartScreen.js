@@ -9,7 +9,7 @@ export default StartScreen=({navigation})=> {
         <>
             <View style={{flex:1, alignItems:'center', justifyContent:'center',}}>
 
-                <TouchableOpacity style={styles.button2}>
+                <TouchableOpacity style={styles.button2} onPress={()=> navigation.navigate('CalcLocDistanceScreen')}>
                     <Text style={{fontWeight:"normal", color:'#1369C1', fontSize:18}}>Calculate Distance</Text>
                 </TouchableOpacity>
 
