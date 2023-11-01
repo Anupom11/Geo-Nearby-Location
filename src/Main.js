@@ -1,7 +1,9 @@
 
 import React, {useState} from "react";
-import { Text, Button, TextInput, View } from "react-native";
+import { Text, Button, TextInput, View, BackHandler, DeviceEventEmitter } from "react-native";
 import GetLocation from 'react-native-get-location';
+
+import LocationServicesDialogBox from "react-native-android-location-services-dialog-box";
 
 import styles from '../src/component/StyleSheet';
 
@@ -38,7 +40,25 @@ export default HomeScreen=()=> {
         .catch(error => {
             const { code, message } = error;
             console.warn(code, message);
+
+            if(code === "UNAVAILABLE") {
+                checkForGPSService();
+            }
         });
+    }
+
+    const checkForGPSService=()=> {
+        if(Platform.OS === 'android') {
+            LocationServicesDialogBox.checkLocationServicesIsEnabled({ 
+                message: "<h2>Use Location?</h2> \
+                            This app wants to change your device settings:<br/><br/>\
+                            Use GPS for location<br/><br/>", 
+                ok: "YES", 
+                cancel: "NO" 
+            }).then(() => { 
+                locationTracking(dispatch, getState, geolocationSettings)
+            })
+        }
     }
 
     const calcDistOnLocation=(lat1, long1, lat2, long2, callback)=> {					
