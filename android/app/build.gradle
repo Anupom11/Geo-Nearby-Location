@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.nearbylocation"
+    namespace "com.groupme.nearbylocation"
     defaultConfig {
-        applicationId "com.nearbylocation"
+        applicationId "com.groupme.nearbylocation"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

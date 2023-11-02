@@ -18,6 +18,7 @@
     "react-native-android-location-services-dialog-box": "^2.8.2",
     "react-native-get-location": "^4.0.0",
     "react-native-maps": "^1.8.0",
+    "react-native-rename": "^3.2.13",
     "react-native-safe-area-context": "^4.7.4",
     "react-native-screens": "^3.27.0"
   },

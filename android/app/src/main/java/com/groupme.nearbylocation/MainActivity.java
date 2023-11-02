@@ -1,4 +1,4 @@
-package com.nearbylocation;
+package com.groupme.nearbylocation;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
