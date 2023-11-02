@@ -1,4 +1,4 @@
-package com.nearbylocation;
+package com.groupme.nearbylocation;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
